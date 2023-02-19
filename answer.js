@@ -204,6 +204,7 @@ console.log(sumArray([-1, 2, -3, 4, -5])); // Output: -3
  * isEven: true if all the numbers in the array are even, false otherwise
  *  */
 
+// es5 version
 function analyzeNumbers(arr) {
   var sum = arr.reduce(function (acc, cur) {
     return acc + cur;
@@ -217,3 +218,15 @@ function analyzeNumbers(arr) {
 
   return { sum: sum, average: average, isEven: isEven };
 }
+
+// es6 version
+const analyzeNumbers = (arr) => {
+  const sum = arr.reduce((acc, cur) => acc + cur, 0);
+  const average = sum / arr.length;
+  const isEven = arr.every((num) => num % 2 === 0);
+  return { sum, average, isEven };
+};
+
+// Example usage:
+console.log(analyzeNumbers([2, 4, 6, 8])); // Output: { sum: 20, average: 5, isEven: true }
+console.log(analyzeNumbers([1, 2, 3, 4, 5])); // Output: { sum: 15, average: 3, isEven: false }

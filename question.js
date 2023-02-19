@@ -9,3 +9,5 @@
 // problem 5: Write a function that takes an array of strings as an argument and returns the longest string in the array.
 
 // problem 6: Write a function that takes an array of numbers as an argument and returns the array in reverse order.
+
+// problem 7: Write a function that takes an array of numbers as an argument and returns the array in sorted order.

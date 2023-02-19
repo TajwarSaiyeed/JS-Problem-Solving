@@ -112,3 +112,36 @@ const reverseArray = (arr) => {
 
 // Example usage:
 console.log(reverseArray([1, 2, 3, 4, 5])); // Output: [5, 4, 3, 2, 1]
+
+// problem 7: Write a function that takes an array of numbers as an argument and returns the array in sorted order.
+
+// es5 version
+function sortArray(arr) {
+  return arr.sort(function (a, b) {
+    return a - b;
+  });
+}
+
+// es6 version
+const sortArray = (arr) => arr.sort((a, b) => a - b);
+
+// Example usage:
+console.log(sortArray([5, 2, 8, 3, 1])); // Output: [1, 2, 3, 5, 8]
+
+// es6 es5
+function sortArray(arr) {
+  return arr.sort(function (a, b) {
+    return a.number - b.number;
+  });
+}
+
+// Example usage:
+console.log(
+  sortArray([
+    { number: 5 },
+    { number: 2 },
+    { number: 8 },
+    { number: 3 },
+    { number: 1 },
+  ])
+); // Output: [{number: 1}, {number: 2}, {number: 3}, {number: 5}, {number: 8}]

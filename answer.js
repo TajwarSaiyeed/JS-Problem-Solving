@@ -145,3 +145,18 @@ console.log(
     { number: 1 },
   ])
 ); // Output: [{number: 1}, {number: 2}, {number: 3}, {number: 5}, {number: 8}]
+
+// problem 8: Write a function that takes an array of strings as an argument and returns the array in sorted order.
+
+// es5 version
+function sortArray(arr) {
+  return arr.sort(function (a, b) {
+    return a.localeCompare(b);
+  });
+}
+
+// es6 version
+const sortArray = (arr) => arr.sort((a, b) => a.localeCompare(b));
+
+// Example usage:
+console.log(sortArray(["cat", "dog", "apple", "zebra", "banana"])); // Output: ['apple', 'banana', 'cat', 'dog', 'zebra']

@@ -288,3 +288,73 @@ const getEvenNumbers = (arr) => arr.filter((num) => num % 2 === 0);
 // Example usage:
 console.log(getEvenNumbers([1, 2, 3, 4, 5, 6])); // Output: [2, 4, 6]
 console.log(getEvenNumbers([-2, -1, 0, 1, 2])); // Output: [-2, 0, 2]
+
+/** problem 13: Create a class Student that extends the Person class. It should have the following properties:
+name (string)
+age (number) */
+
+// es5 version
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+Person.prototype.sayHello = function () {
+  console.log(
+    "Hello, my name is " + this.name + " and I'm " + this.age + " years old."
+  );
+};
+
+function Student(name, age, studentId, major) {
+  Person.call(this, name, age);
+  this.studentId = studentId;
+  this.major = major;
+}
+
+Student.prototype = Object.create(Person.prototype);
+Student.prototype.constructor = Student;
+
+Student.prototype.showStudentInfo = function () {
+  console.log(
+    "I'm " +
+      this.name +
+      ", a " +
+      this.major +
+      " major student with student ID " +
+      this.studentId +
+      "."
+  );
+};
+
+// es6 version
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  sayHello() {
+    console.log(
+      `Hello, my name is ${this.name} and I'm ${this.age} years old.`
+    );
+  }
+}
+
+class Student extends Person {
+  constructor(name, age, studentId, major) {
+    super(name, age);
+    this.studentId = studentId;
+    this.major = major;
+  }
+
+  showStudentInfo() {
+    console.log(
+      `I'm ${this.name}, a ${this.major} major student with student ID ${this.studentId}.`
+    );
+  }
+}
+
+// Example usage:
+const john = new Student("John", 20, "1234", "Computer Science");
+john.sayHello(); // Output: Hello, my name is John and I'm 20 years old.
+john.showStudentInfo(); // Output: I'm John, a Computer Science major student with student ID 1234.

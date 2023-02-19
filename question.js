@@ -35,3 +35,5 @@
 // problem 12: Write a function that takes an array of numbers as an argument and returns a new array with only the even numbers
 
 // problem 13: Create a class Student that extends the Person class. It should have the following properties:
+// name (string)
+// age (number)

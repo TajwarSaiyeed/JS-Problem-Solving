@@ -358,3 +358,26 @@ class Student extends Person {
 const john = new Student("John", 20, "1234", "Computer Science");
 john.sayHello(); // Output: Hello, my name is John and I'm 20 years old.
 john.showStudentInfo(); // Output: I'm John, a Computer Science major student with student ID 1234.
+
+// problem 14: Write a function that takes an array of strings as an argument and returns a new array with only the strings that are longer than 5 characters
+
+// es5 version
+function filterLongStrings(arr) {
+  var result = [];
+
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i].length > 5) {
+      result.push(arr[i]);
+    }
+  }
+
+  return result;
+}
+
+// es6 version
+const filterLongStrings = (arr) => arr.filter((str) => str.length > 5);
+
+// Example usage:
+const words = ["apple", "banana", "cherry", "date", "elderberry", "fig"];
+const longWords = filterLongStrings(words);
+console.log(longWords); // Output: ["banana", "cherry", "elderberry"]

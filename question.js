@@ -37,3 +37,5 @@
 // problem 13: Create a class Student that extends the Person class. It should have the following properties:
 // name (string)
 // age (number)
+
+// problem 14: Write a function that takes an array of strings as an argument and returns a new array with only the strings that are longer than 5 characters

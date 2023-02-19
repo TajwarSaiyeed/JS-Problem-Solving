@@ -268,3 +268,23 @@ class Person {
 // Example usage:
 const person = new Person("John", 30, "male");
 console.log(person.getDetails()); // Output: "Name: John, Age: 30, Gender: male"
+
+// problem 12: Write a function that takes an array of numbers as an argument and returns a new array with only the even numbers
+
+// es5 version
+function getEvenNumbers(arr) {
+  var evenNumbers = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      evenNumbers.push(arr[i]);
+    }
+  }
+  return evenNumbers;
+}
+
+// es6 version
+const getEvenNumbers = (arr) => arr.filter((num) => num % 2 === 0);
+
+// Example usage:
+console.log(getEvenNumbers([1, 2, 3, 4, 5, 6])); // Output: [2, 4, 6]
+console.log(getEvenNumbers([-2, -1, 0, 1, 2])); // Output: [-2, 0, 2]

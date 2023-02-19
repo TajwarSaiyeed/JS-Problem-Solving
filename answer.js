@@ -381,3 +381,27 @@ const filterLongStrings = (arr) => arr.filter((str) => str.length > 5);
 const words = ["apple", "banana", "cherry", "date", "elderberry", "fig"];
 const longWords = filterLongStrings(words);
 console.log(longWords); // Output: ["banana", "cherry", "elderberry"]
+
+// problem 15: Write a function that takes an array of numbers as an argument and returns a new array with only the numbers that are divisible by 5
+
+// es5 version
+
+function filterDivisibleByFive(arr) {
+  var result = [];
+
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 5 === 0) {
+      result.push(arr[i]);
+    }
+  }
+
+  return result;
+}
+
+// es6 version
+const filterDivisibleByFive = (arr) => arr.filter((num) => num % 5 === 0);
+
+// Example usage:
+const numbers = [1, 5, 10, 13, 15, 20, 25];
+const divisibleByFive = filterDivisibleByFive(numbers);
+console.log(divisibleByFive); // Output: [5, 10, 15, 20, 25]

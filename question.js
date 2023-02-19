@@ -39,3 +39,5 @@
 // age (number)
 
 // problem 14: Write a function that takes an array of strings as an argument and returns a new array with only the strings that are longer than 5 characters
+
+// problem 15: Write a function that takes an array of numbers as an argument and returns a new array with only the numbers that are divisible by 5

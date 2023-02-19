@@ -195,3 +195,25 @@ const sumArray = (arr) => arr.reduce((acc, cur) => acc + cur, 0);
 // Example usage:
 console.log(sumArray([1, 2, 3, 4, 5])); // Output: 15
 console.log(sumArray([-1, 2, -3, 4, -5])); // Output: -3
+
+/**
+ * problem 10:
+ * Write a function that takes an array of numbers as an argument and returns an object with the following properties:
+ * sum: the sum of all the numbers in the array
+ * average: the average of all the numbers in the array
+ * isEven: true if all the numbers in the array are even, false otherwise
+ *  */
+
+function analyzeNumbers(arr) {
+  var sum = arr.reduce(function (acc, cur) {
+    return acc + cur;
+  }, 0);
+
+  var average = sum / arr.length;
+
+  var isEven = arr.every(function (num) {
+    return num % 2 === 0;
+  });
+
+  return { sum: sum, average: average, isEven: isEven };
+}

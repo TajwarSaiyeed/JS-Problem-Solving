@@ -230,3 +230,41 @@ const analyzeNumbers = (arr) => {
 // Example usage:
 console.log(analyzeNumbers([2, 4, 6, 8])); // Output: { sum: 20, average: 5, isEven: true }
 console.log(analyzeNumbers([1, 2, 3, 4, 5])); // Output: { sum: 15, average: 3, isEven: false }
+
+/** problem 11:
+ * Create a class Person that has the following properties:
+ * name (string)
+ * age (number)
+ * gender (string)
+ * It should have a method getDetails that returns a string with the person's name, age, and gender.
+ */
+
+// es5 version
+function Person(name, age, gender) {
+  this.name = name;
+  this.age = age;
+  this.gender = gender;
+}
+
+Person.prototype.getDetails = function () {
+  return (
+    "Name: " + this.name + ", Age: " + this.age + ", Gender: " + this.gender
+  );
+};
+
+// es6 version
+class Person {
+  constructor(name, age, gender) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
+
+  getDetails() {
+    return `Name: ${this.name}, Age: ${this.age}, Gender: ${this.gender}`;
+  }
+}
+
+// Example usage:
+const person = new Person("John", 30, "male");
+console.log(person.getDetails()); // Output: "Name: John, Age: 30, Gender: male"

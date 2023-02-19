@@ -23,3 +23,11 @@
  * average: the average of all the numbers in the array
  * isEven: true if all the numbers in the array are even, false otherwise
  *  */
+
+/** problem 11:
+ * Create a class Person that has the following properties:
+ * name (string)
+ * age (number)
+ * gender (string)
+ * It should have a method getDetails that returns a string with the person's name, age, and gender.
+ */

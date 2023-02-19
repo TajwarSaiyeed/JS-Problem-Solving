@@ -160,3 +160,38 @@ const sortArray = (arr) => arr.sort((a, b) => a.localeCompare(b));
 
 // Example usage:
 console.log(sortArray(["cat", "dog", "apple", "zebra", "banana"])); // Output: ['apple', 'banana', 'cat', 'dog', 'zebra']
+
+// problem 9: Write a function that takes an array of numbers as an argument and returns the sum of all the numbers in the array.
+
+// es5 version
+
+function sumArray(arr) {
+  var sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+
+// reduce version
+function sumArray(arr) {
+  return arr.reduce(function (acc, cur) {
+    return acc + cur;
+  }, 0);
+}
+
+// es6 version
+const sumArray = (arr) => {
+  let sum = 0;
+  for (let num of arr) {
+    sum += num;
+  }
+  return sum;
+};
+
+// es6 version 2
+const sumArray = (arr) => arr.reduce((acc, cur) => acc + cur, 0);
+
+// Example usage:
+console.log(sumArray([1, 2, 3, 4, 5])); // Output: 15
+console.log(sumArray([-1, 2, -3, 4, -5])); // Output: -3

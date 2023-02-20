@@ -41,3 +41,9 @@
 // problem 14: Write a function that takes an array of strings as an argument and returns a new array with only the strings that are longer than 5 characters
 
 // problem 15: Write a function that takes an array of numbers as an argument and returns a new array with only the numbers that are divisible by 5
+
+// problem 16: How can you sort an array of objects by a specific property in JavaScript?
+
+// problem 17: How can you convert a string to title case (capitalize the first letter of each word) using JavaScript?
+
+// problem 18: How can you check if a string contains a substring in JavaScript?

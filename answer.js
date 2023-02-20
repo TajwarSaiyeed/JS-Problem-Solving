@@ -405,3 +405,70 @@ const filterDivisibleByFive = (arr) => arr.filter((num) => num % 5 === 0);
 const numbers = [1, 5, 10, 13, 15, 20, 25];
 const divisibleByFive = filterDivisibleByFive(numbers);
 console.log(divisibleByFive); // Output: [5, 10, 15, 20, 25]
+
+// problem 16: How can you sort an array of objects by a specific property in JavaScript?
+const arr = [
+  { name: "John", age: 25 },
+  { name: "Jane", age: 30 },
+  { name: "Bob", age: 20 },
+];
+
+// es5 version
+function compareByAge(a, b) {
+  // Compare the age property of the two objects
+  if (a.age < b.age) {
+    return -1;
+  }
+  if (a.age > b.age) {
+    return 1;
+  }
+  return 0;
+}
+
+arr.sort(compareByAge);
+
+// es6 version
+const compareByAge = (a, b) => a.age - b.age;
+
+arr.sort(compareByAge);
+
+console.log(arr);
+// Output: [{ name: 'Bob', age: 20 }, { name: 'John', age: 25 }, { name: 'Jane', age: 30 }]
+
+// problem 17: How can you convert a string to title case (capitalize the first letter of each word) using JavaScript?
+
+// es5 version
+function toTitleCase(str) {
+  return str.replace(/\w\S*/g, function (txt) {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+}
+
+// es6 version
+
+const toTitleCase = (str) =>
+  str.replace(
+    /\w\S*/g,
+    (txt) => `${txt.charAt(0).toUpperCase()}${txt.substr(1).toLowerCase()}`
+  );
+
+const input = "the quick brown fox";
+const output = toTitleCase(input);
+console.log(output); // Output: "The Quick Brown Fox"
+
+// problem 18: How can you check if a string contains a substring in JavaScript?
+
+// es5 version
+const str = "The quick brown fox jumps over the lazy dog";
+
+if (str.includes("fox")) {
+  console.log('String contains "fox"');
+} else {
+  console.log('String does not contain "fox"');
+}
+
+// ternary operator
+
+const hasFox = str.includes("fox") ? true : false;
+
+console.log(`String ${hasFox ? "contains" : "does not contain"} "fox"`);

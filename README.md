@@ -2,6 +2,7 @@
 
 ```
 3D Icons
+[3DIcons](#3d-icons)
 ShapeFest
 PageCollective
 Screen Lane

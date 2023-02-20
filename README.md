@@ -7,7 +7,7 @@ https://3dicons.co/
 ```
 
 [3D Icons](https://3dicons.co/)
-![3D icons](website/3dicons.png)
+![3D Icons](website/3dicons.png)
 
 # ShapeFest
 
@@ -16,7 +16,7 @@ https://www.shapefest.com/
 ```
 
 [Shape Fest](https://www.shapefest.com/)
-![shapefest](website/shapefest.png)
+![Shape Fest](website/shapefest.png)
 
 # PageCollective
 
@@ -24,8 +24,8 @@ https://www.shapefest.com/
 https://pagecollective.com/
 ```
 
-[pageCollective](https://pagecollective.com/)
-![pageCollective](website/pagecollective.png)
+[Page Collective](https://pagecollective.com/)
+![Page Collective](website/pagecollective.png)
 
 # Screen Lane
 
@@ -33,8 +33,8 @@ https://pagecollective.com/
 https://screenlane.com/
 ```
 
-[screenlane](https://screenlane.com/)
-![screen lane](website/screenlane.png)
+[Screen Lane](https://screenlane.com/)
+![Screen Lane](website/screenlane.png)
 
 # Lookup.Design
 
@@ -42,5 +42,14 @@ https://screenlane.com/
 https://lookup.design/
 ```
 
-[lookup design](https://lookup.design/)
-![lookup design](website/lookupDesign.png)
+[Lookup Design](https://lookup.design/)
+![Lookup Design](website/lookupDesign.png)
+
+# Remove Bg
+
+```
+https://www.remove.bg/
+```
+
+[Remove Bg](https://www.remove.bg/)
+![removeBg](website/removebg.png)
